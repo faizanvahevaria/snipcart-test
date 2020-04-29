@@ -1,0 +1,7 @@
+{{ define "main" }}
+  {{- if .Site.IsServer -}} {{ "<!-- Layout: _default/list.html -->" |safeHTML }} {{- end -}}
+ 
+  <h1>_default/list.html</h1>
+
+  {{- if .Site.IsServer -}} {{ "<!-- Layout: End _default/list.html -->" |safeHTML }} {{- end -}}
+{{ end }}

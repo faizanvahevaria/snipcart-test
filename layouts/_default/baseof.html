@@ -1,0 +1,35 @@
+{{- if .Site.IsServer -}} {{ "<!-- Layout: _default/baseof.html -->" |safeHTML }} {{- end -}}
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+<head>
+  {{ partial "meta.html" . }}
+
+  {{ partial "favicons.html" . }}
+
+  {{ partial "css.html" . }}
+</head>
+
+<body>
+  {{ if .Site.IsServer }}
+    {{ partial "preload.html" . }}
+  {{ end }}
+
+
+  {{ partial "navigation.html" . }}
+
+  {{ block "main" . }}
+  {{ end }}
+
+
+  {{ partial "footer.html" . }}
+
+
+
+  {{ partial "javascript.html" . }}
+</body>
+
+</html>
+
+
+{{- if .Site.IsServer -}} {{ "<!-- Layout: End_default/baseof.html -->" |safeHTML }} {{- end -}}

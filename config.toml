@@ -1,0 +1,5 @@
+baseURL = "/"
+languageCode = "en-US"
+title = "New Website Site Title"
+#hugo_version = "https://github.com/gohugoio/hugo/releases/tag/v0.55.6"
+
