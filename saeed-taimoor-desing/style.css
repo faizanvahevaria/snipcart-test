@@ -1,0 +1,309 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #FFA31A;
+    color: #fff;
+		padding-top: 25px;
+		padding-bottom: 25px;
+    min-height: 65px;
+}
+
+.shipping-title h1 {
+	font-size: 14px !important;
+	text-align: center;
+	color: #fff;
+}
+
+.shipping-title span {
+	font-weight: bold;
+}
+
+header a {
+	color: #fff;
+	text-decoration: none;
+	text-transform: capitalize;
+	font-size: 15px;
+}
+
+.cta-signin {
+	float: right;
+	font-weight: lighter;
+}
+
+.container-section {
+  padding-top: 30px;
+}
+
+.container-section h4 {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+
+
+
+/* Buttons */
+
+.cta-btn {
+	border: none;
+	border-radius: 4px;
+	font-size: 14px;
+	width: 75px;
+	border: none;
+}
+
+.cta-btn:active,
+.cta-btn:hover{
+	border: none;
+	border-radius: 4px;
+	background-color: #EEEEEE;
+	font-size: 14px;
+	width: 75px;
+}
+
+.cta-cart {
+	float: right;
+}
+
+
+.t-shirt-main-frame {
+	/* width: 320px;
+	height: 320px; */
+	border: 1px solid #80808033;
+	border-radius: 04px;
+	margin: 0 auto;
+}
+
+.sub-tshirt-frame {
+	/* width: 320px;
+	height: 320px; */
+	border-radius: 04px;
+	margin: 0 auto;
+}
+
+
+.t-shirt-main-frame img {
+	max-width: 300px;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+.sub-tshirt-frame p{
+	font-size: 16px;
+	padding-top: 20px;
+}
+
+
+.t-shirt-color-a {
+	border: 1px solid #80808033;
+	border-radius: 04px;
+}
+
+.t-shirt-color-a > img {
+	max-width: 100px;
+	border-radius: 04px;
+	margin: 0 auto;
+	display: block;
+}
+
+.tshirt-detail-wrapper {
+	padding-left: 50px;
+}
+
+.men-detail-wrapper h3{
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+
+.t-shirt-description {
+	list-style-type: none;
+	padding-bottom: 15px;
+}
+
+.t-shirt-price {
+	font-size: 30px;
+	font-weight: 600;
+}
+
+.tshirt-design-wrapper {
+	margin-top: 20px;
+}
+
+.tshirt-design-wrapper h2 {
+	font-size: 16px;
+}
+
+.selection-tshirt {
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+}
+
+.t-shirts-gallery-img-frame {
+	border: 1px solid #80808033;
+	border-radius: 04px;
+}
+
+.t-shirts-gallery-img-frame img {
+	max-width: 120px;
+	margin: 10px auto;
+	display: block;
+}
+
+.tshirt-size {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.tshirt-size h2 {
+	font-size: 16px;
+}
+
+.cta-size {
+	border: 1px solid #80808033;
+	font-size: 14px;
+}
+
+.cta-size:hover,
+.cta-size:active {
+	border-color: #FFA31A;
+	background-color: white;
+}
+
+.tshirt-quantity {
+	padding-bottom: 20px;
+}
+
+.tshirt-quantity  h2 {
+	font-size: 16px;
+}
+
+.tshirt-shipping-wrapper {
+	padding-bottom: 50px;
+}
+
+.buy-now {
+	background-color: #FFA31A;
+	color: #fff;
+	border: none;
+	font-size: 12px;
+	padding: 12px 50px;
+	border-radius: 04px;
+}
+
+.add-to-cart {
+	background-color: #fff;
+	color: #000;
+	border: 2px solid #151C3C;
+	font-size: 12px;
+	padding: 12px 50px;
+	border-radius: 04px;
+
+}
+
+.t-shirt-front-back-div {
+    display: flex;
+    width: 90%;
+    padding: 5px 0px 0px 0px;
+}
+
+
+
+
+
+.t-shirt-front-back-title {
+    font-size: 12px;
+    text-align: center;
+    color: #545b6280;
+    margin-bottom: 0;
+    padding-top: 10px;
+}
+
+
+
+.sub, .add {
+    border: 1px solid #80808033;
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    background-color: #EEEEEE;
+}
+
+/* Input fields */
+.value {
+	width: 40px;
+	border: none;
+	text-align: center;
+	padding-left: 10px;
+}
+
+.pad-t-30 {
+    padding-top: 30px;
+}
+
+
+@media screen and (max-width:767px) {
+	.t-shirt-main-frame img {
+    max-width: 250px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+	}
+
+	.tshirt-detail-wrapper {
+		padding-left: 0px;
+	}
+
+	.buy-now { 
+		margin-bottom: 20px;
+	}
+	.cta-signin {
+		float: none;
+		text-align: center;
+		
+	}
+	.cta-cart {
+		float: none;
+		
+	}
+  #logo {
+		text-align: center;
+		padding-bottom: 10px;
+	}
+}
+
+@media screen and (max-width:1023px) {
+	.buy-now { 
+		margin-bottom: 20px;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+

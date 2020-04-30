@@ -1,7 +1,65 @@
 {{ define "main" }}
   {{- if .Site.IsServer -}} {{ "<!-- Layout: _default/single.html -->" |safeHTML }} {{- end -}}
   
-  <h1> _default/single.html</h1>
+  <div class="main-container">
+
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 col-md-4  col-sm-6">
+            <div class="logo">
+              <a href="/">LOGO</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="shipping-title">
+              <p><b>Free Shipping:</b>  On orders over $25</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="cta-signin"><a href="#">Sign in</a></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="thankyou-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="image-wrapper">
+              <img src="/img/t-shirts/blue.png" alt="" class="order-image" id="order-image">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="order-deatil-wrapper">
+              <div class="thankyou-msg-title">
+                <h1> {{ .Title }}</h1>
+              </div>
+              <div class="information-wrapper">
+                <div class="order-status-wrapper">
+                  <span><b>Order-status</b></span>
+                  <p class="order-status" id="order-status">Order has been received</p>
+                </div>
+
+                <div class="tracking-info-wrap">
+                  <span><b>Tracking Information</b></span>
+                  <p class="tracking-info-id" id="order-id">123FAPOO786</p>
+                </div>
+
+                <div class="order-qus-wrap">
+                  <span><b>Question about your Order?</b></span>
+                  <p><a href="tel://+11237867860" class="phone-number">Call +1 (123) 786-7860</a></p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
   
   {{- if .Site.IsServer -}} {{ "<!-- Layout: End _default/single.html -->" |safeHTML }} {{- end -}}
 {{ end }}
