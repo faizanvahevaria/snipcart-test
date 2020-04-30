@@ -102,9 +102,9 @@ height: 320px; */
 }
 
 .t-shirt-color-a>img {
-  max-width: 100px;
+  max-width: 90px;
   border-radius: 4%;
-  margin: 0 auto;
+  margin: 10px auto;
   display: block;
 }
 
@@ -161,8 +161,7 @@ height: 320px; */
   
 }
 
-.cta-size:hover,
-.cta-size:active {
+.cta-size:hover{
   border-color: #FFA31A;
   background-color: white;
 }
@@ -407,4 +406,21 @@ height: 320px; */
 
 .product-detail-row {
   margin-bottom: 40px;
+}
+
+.category-btn.active {
+  background: #EEEEEE;
+}
+
+.t-shirt-size.active {
+  border-color: #FFA31A;
+  box-shadow: none;
+}
+
+.tshirt-design.active {
+  border-color: #FFA31A;
+}
+
+.tshirt-color.active {
+  border-color: #FFA31A;
 }
