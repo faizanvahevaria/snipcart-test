@@ -1,0 +1,588 @@
+{{ define "main" }}
+{{- if .Site.IsServer -}} {{ "<!-- Layout: _default/single.html -->" |safeHTML }} {{- end -}}
+  <div class="main-container">
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 col-md-4  col-sm-6">
+            <div class="logo">
+              <a href="/">LOGO</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="shipping-title">
+              <p><b>Free Shipping:</b>  On orders over $25</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="cta-signin"><a href="#">Sign in</a></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="shipping-cart-wrapper">
+      <div class="container">
+        <div class="shipping-section-title">
+          <h1>Shopping Cart (1)</h1>
+        </div>
+      </div>
+      
+      <div class="item-wrapper">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-md-8">
+              <div class="item-list wrapper">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    
+                  </div>
+                </div>
+                <hr>
+                <div class="product-detail">
+                <div class="row">
+                  <div class="col-md-6">
+                    <span>Product Details</span>
+                    
+                  </div>
+                  <div class="col-md-2">
+                    <span>Quantity</span>
+                    
+                  </div>
+                  <div class="col-md-2">
+                    <span>Price</span>
+                    
+                  </div>
+                  <div class="col-md-2">
+                    <span>Total</span>
+                    
+                  </div>
+                </div>
+                <hr>
+                <div class="row product-detail-row">
+
+                  <div class="col-md-6">
+
+                    <div class="row">
+
+                      <div class="col-6">
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <img src="/img/t-shirts/blue.png" class="image">
+                        </div> 
+                      </div>
+
+                      <div class="col-6">
+                        <div class="image-information">
+                          <p>Homme Summer Men’s Casual T-Shirts </p>
+                          <p id="product-color"><span>color: </span> Black</p>
+                          <p id="product-size"><span>Size: </span> L</p>
+                          <p id="product-code"><span>Product Code: </span> 164758</p>
+
+                        </div>
+                      </div>
+
+                    </div>
+                    
+                    
+                  </div>
+
+                  <div class="col-md-2">  
+                    <div id="btn-quantity-div" class="btn-quantity-wrap">
+                      <button type="button" id="sub" class="w-25" >-</button>
+                      <input type="number" id="1"  value="1" min="1" />
+                      <button type="button" id="add" class="w-25">+</button>
+                    </div>
+                  </div>
+                  <div class="col-md-2">  
+                    <div class="item-price">
+                      <p id="item-price">$50.00</p>
+                    </div>
+                  </div>
+                  <div class="col-md-2">  
+                    <div class="item-total-price">
+                      <p id="item-total-price">$78.60</p>
+                      <a href="" id="remove-icon"><img src="/img/remove.svg"></a>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="row product-detail-row">
+
+                  <div class="col-md-6">
+
+                    <div class="row">
+
+                      <div class="col-6">
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <img src="/img/t-shirts/blue.png" class="image">
+                        </div> 
+                      </div>
+
+                      <div class="col-6">
+                        <div class="image-information">
+                          <p>Homme Summer Men’s Casual T-Shirts </p>
+                          <p id="product-color"><span>color: </span> Black</p>
+                          <p id="product-size"><span>Size: </span> L</p>
+                          <p id="product-code"><span>Product Code: </span> 164758</p>
+
+                        </div>
+                      </div>
+
+                    </div>
+                    
+                    
+                  </div>
+
+                  <div class="col-md-2">  
+                    <div id="btn-quantity-div" class="btn-quantity-wrap">
+                      <button type="button" id="sub" class="w-25" >-</button>
+                      <input type="number" id="1"  value="1" min="1"  class="" />
+                      <button type="button" id="add" class="w-25">+</button>
+                    </div>
+                  </div>
+                  <div class="col-md-2">  
+                    <div class="item-price">
+                      <p id="item-price">$50.00</p>
+                    </div>
+                  </div>
+                  <div class="col-md-2">  
+                    <div class="item-total-price">
+                      <p id="item-total-price">$78.60</p>
+                      <a href="" id="remove-icon"><img src="/img/remove.svg"></a>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="row product-detail-row">
+
+                  <div class="col-md-6"> 
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <img src="/img/t-shirts/blue.png" class="image">
+                        </div> 
+                      </div>
+                      <div class="col-6">
+                        <div class="image-information">
+                          <p>Homme Summer Men’s Casual T-Shirts </p>
+                          <p id="product-color"><span>color: </span> Black</p>
+                          <p id="product-size"><span>Size: </span> L</p>
+                          <p id="product-code"><span>Product Code: </span> 164758</p>
+                        </div>
+                      </div>
+                    </div> 
+                  </div>
+
+                  <div class="col-md-2">  
+                    <div id="btn-quantity-div" class="btn-quantity-wrap">
+                      <button type="button" id="sub" class="w-25" >-</button>
+                      <input type="number" id="1"  value="1" min="1"  />
+                      <button type="button" id="add" class="w-25">+</button>
+                    </div>
+                  </div>
+                  <div class="col-md-2">  
+                    <div class="item-price">
+                      <p id="item-price">$50.00</p>
+                    </div>
+                  </div>
+                  <div class="col-md-2">  
+                    <div class="item-total-price">
+                      <p id="item-total-price">$78.60</p>
+                      <a href="" id="remove-icon"><img src="/img/remove.svg"></a>
+                    </div>
+                  </div>
+
+                </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="order-summary-wrapper wrapper">
+                <div class="order-summary-title">
+                  <h2>Order Summary</h2>
+                </div>
+                <hr>
+
+                <div class="item-1-deatil">
+                  <div class="row">
+                    <div class="col">
+                      <p id="item-title">Homme Summer Men’s Casual T-Shirts </p>
+                      <p id="item-quantity"><span>Quantity: </span>1</p>
+                    </div>
+                    <div class="col">
+                      <p id="item-amount">$78.60</p>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="item-2-deatil">
+                  <div class="row">
+                    <div class="col">
+                      <p id="item-title">Men's T-Shirt</p>
+                      <p id="item-quantity"><span>Quantity: </span>1</p>
+                    </div>
+                    <div class="col">
+                      <p id="item-amount">$78.60</p>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="item-3-deatil">
+                  <div class="row">
+                    <div class="col">
+                      <p id="item-title">Men's T-Shirt</p>
+                      <p id="item-quantity"><span>Quantity: </span>1</p>
+                    </div>
+                    <div class="col">
+                      <p id="item-amount">$78.60</p>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+
+                <div class="shipping-dropdown">
+                  <span>Shipping</span>
+                  <select class="form-control" id="sel1">
+                    <option>Cash on Delivery (Fee $20.00)</option>
+                    <option>Cash on Delivery (Fee $20.00)</option>
+                    <option>Cash on Delivery (Fee $20.00)</option>
+                    <option>Cash on Delivery (Fee $20.00)</option>
+                  </select>
+                </div>
+
+                <hr>
+
+                <div class="total-price-wrapper">
+                  <div class="row">
+                    <div class="col">
+                      <p id="total-title">Total Coast</p>
+                      
+                    </div>
+                    <div class="col">
+                      <p id="total-coast">$78.60</p>
+                    </div>
+                  </div>
+                </div>
+
+                
+                <div class="code-wrapper">
+                  <div class="row">
+                    <div class="col">
+                      <p id="Promotional-title">Promotional Code</p>
+                      
+                    </div>
+                    <div class="col">
+                      <p id="item-amount">+</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="checkout-wrapper">
+        
+        <div class="container">
+          <div class="checkout-title">
+            <h2>Checkout</h2>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="row">
+                <div class="col">
+                  <div class="form-group">
+                    <label for="email-address">Email</label>
+                    <input type="email" class="form-control" id="email-address">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-group">
+                    <label for="phone-number">Phone No</label>
+                    <input type="number" class="form-control" id="phone-number">
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            <div class="col-md-6">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="addrress-Radios" id="billing-address" value="option1" checked>
+                <label class="form-check-label" for="billing-address">Shipping address same as billing address</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="billing-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="billing-detail-wrapper wrapper">
+                <h2>Billing Details</h2>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="person-fname">First Name</label>
+                      <input type="text" class="form-control" id="person-fname">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="person-lname">Last Name</label>
+                      <input type="text" class="form-control" id="person-lname">
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label for="person-add1">Address Line 1</label>
+                      <input type="text" class="form-control" id="person-add1">
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label for="person-add2">Address Line 2</label>
+                      <input type="text" class="form-control" id="person-add2">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="person-city">City</label>
+                      <input type="text" class="form-control" id="person-city">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="person-state">State</label>
+                      <input type="text" class="form-control" id="person-state">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="person-zip">Zip</label>
+                      <input type="number" class="form-control" id="person-zip">
+                    </div>
+                  </div>
+
+                </div>
+          
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="Shipping-detail-wrapper wrapper">
+                <h2>Shipping Address</h2>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="person-fname">First Name</label>
+                      <input type="text" class="form-control" id="person-fname">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="person-lname">Last Name</label>
+                      <input type="text" class="form-control" id="person-lname">
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label for="person-add1">Address Line 1</label>
+                      <input type="text" class="form-control" id="person-add1">
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label for="person-add2">Address Line 2</label>
+                      <input type="text" class="form-control" id="person-add2">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="person-city">City</label>
+                      <input type="text" class="form-control" id="person-city">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="person-state">State</label>
+                      <input type="text" class="form-control" id="person-state">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="person-zip">Zip</label>
+                      <input type="number" class="form-control" id="person-zip">
+                    </div>
+                  </div>
+
+                </div>
+          
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="payment-method-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="shipping-method-wrapper wrapper">
+                <div class="shipping-method-title">
+                  <h2>Shipping Methods</h2>
+                </div>
+                <div class="method-btn">
+                  <div class="row">
+                    <div class="col">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="addrress-Radios" id="usps-flat" value="option1" checked>
+                        <label class="form-check-label" for="usps-flat">USPS Flat</label>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="addrress-Radios" id="usps" value="option2" checked>
+                        <label class="form-check-label" for="usps">USPS</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+
+
+                <div class="payment-method-wrapper">
+                  <h2>Payment Methods</h2>
+                </div>
+
+                <div class="method-1">
+                  <div class="accordion" id="accordionExample">
+                    <div class="card">
+                      <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Credit Card
+                          </button>
+                        </h5>
+                      </div>
+                  
+                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="person-fname">Name on Card</label>
+                                <input type="text" class="form-control" id="card-name">
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="person-lname">Card No</label>
+                                <input type="text" class="form-control" id="card-no">
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="row">
+                                <div class="col">
+                                  <div class="form-group">
+                                    <label for="person-exp">Exp</label>
+                                    <select class="form-control" id="exp-se1">
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                      <option>6</option>
+                                      <option>7</option>
+                                      <option>8</option>
+                                      <option>9</option>
+                                      <option>10</option>
+                                      <option>11</option>
+                                      <option>12</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="form-group exp-selection">
+                                    <select class="form-control" id="exp-sel2">
+                                      <option>2020</option>
+                                      <option>2021</option>
+                                      <option>2022</option>
+                                      <option>2023</option>
+                                      <option>2024</option>
+                                      <option>2025</option>
+                                      <option>2026</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="card-no">CVV/CVC</label>
+                                <input type="text" class="form-control" id="cvv">
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          PayPal
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                          <div class="col">
+                            <div class="form-group">
+                              <label for="email-address">Email</label>
+                              <input type="email" class="form-control" id="email-address">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+
+            </div>
+          </div>
+          <div class="col-md-6">
+            <form>
+              <div class="form-group">
+                <h2>Comments</h2>
+                <textarea class="form-control" rows="5" id="comment"></textarea>
+              </div>
+            </form>
+            <div class="cta-purchase">
+              <button type="button" id="Purchase" class="Purchase">Purchase</button>
+            </div>
+          </div>  
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+{{- if .Site.IsServer -}} {{ "<!-- Layout: End _default/single.html -->" |safeHTML }} {{- end -}}
+{{ end }}
